@@ -66,7 +66,7 @@ ul {
 }
 
 .top {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .top-slider {
@@ -106,6 +106,10 @@ ul {
 }
 
 .top-slider__btn {
+  margin-left: auto;
+}
+
+.button {
   display: inline-block;
   color: #7449bb;
   text-transform: uppercase;
@@ -113,11 +117,10 @@ ul {
   padding: 21px 55px;
   border: 1px solid #7449bb;
   font-weight: 700;
-  margin-left: auto;
   transition: all 0.3s ease;
 }
 
-.top-slider__btn:hover {
+.button:hover {
   color: #fff;
   background-color: #7449bb;
 }
@@ -139,4 +142,64 @@ ul {
 .swiper-button-next {
   left: 75px;
   right: auto;
+}
+
+.about {
+  margin-bottom: 150px;
+  overflow: hidden;
+}
+
+.about__inner {
+  padding-left: 200px;
+}
+
+.about__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 400;
+  text-transform: uppercase;
+  max-width: 185px;
+  margin-bottom: 20px;
+}
+
+.about__textbox {
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.about__text {
+  flex-basis: 387px;
+  line-height: 1.2;
+}
+
+.about__text p {
+  margin-bottom: 15px;
+}
+
+.about__text--bold {
+  font-weight: 700;
+}
+
+.about__item-title {
+  margin-bottom: 20px;
+}
+
+.about__slider {
+  width: 1600px;
+  padding-left: 200px;
+  margin-left: -200px;
+  padding-bottom: 20px;
+}
+
+.about__arrow {
+  margin-left: -198px;
+  margin-top: -6px;
+}
+
+.container-arrow .swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
 }
