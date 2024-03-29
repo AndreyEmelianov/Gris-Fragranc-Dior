@@ -24,7 +24,7 @@ ul {
   margin: 0 auto;
 }
 
-.body {
+body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -145,7 +145,7 @@ ul {
 }
 
 .about {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   overflow: hidden;
 }
 
@@ -188,7 +188,7 @@ ul {
 }
 
 .about__slider {
-  width: 1600px;
+  width: 1800px;
   padding-left: 200px;
   margin-left: -200px;
   padding-bottom: 20px;
@@ -202,4 +202,72 @@ ul {
 .container-arrow .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
   opacity: 1;
+}
+
+.accordion {
+  margin-bottom: 223px;
+}
+
+.accordion__inner {
+  padding-left: 200px;
+}
+
+.accordion__item {
+  border-bottom: 1px solid #7449bb;
+  padding: 0 101px 0 0;
+  position: relative;
+}
+
+.accordion__item::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 51px;
+  background-image: url(../images/arrow-down.svg);
+  right: 85px;
+  top: 50px;
+}
+
+.accordion__item:last-child::after {
+  content: '';
+  position: absolute;
+  background-image: url(../images/accordion-img.jpg);
+  width: 65px;
+  height: 120px;
+  bottom: -73px;
+  left: 268px;
+}
+
+.accordion__trigger {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-top: 50px;
+}
+
+.accordion__trigger-title {
+  flex-basis: 300px;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-bottom: 42px;
+}
+
+.accordion__trigger-text {
+  flex-basis: 387px;
+  margin-right: 104px;
+  padding-bottom: 20px;
+}
+
+.accordion__content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+}
+
+.accordion__content p {
+  margin-bottom: 10px;
+}
+
+.accordion__item--active .accordion__content {
+  display: block;
 }

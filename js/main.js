@@ -22,3 +22,10 @@ const aboutSlider = new Swiper('.about__slider', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const accordionTriggers = document.querySelectorAll('.accordion__trigger');
+const accordionContent = accordionTriggers.forEach((item) =>
+  item.addEventListener('click', () => {
+    item.parentNode.classList.toggle('accordion__item--active');
+  }),
+);
