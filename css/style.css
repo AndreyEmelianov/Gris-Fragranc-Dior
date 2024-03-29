@@ -18,6 +18,13 @@ ul {
   list-style-type: none;
 }
 
+button {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1220px;
   padding: 0 10px;
@@ -330,4 +337,21 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   font-style: italic;
+}
+
+.video {
+  margin-bottom: 150px;
+}
+
+.video__box {
+  margin-left: auto;
+  max-width: 997px;
+  min-height: 600px;
+  background-image: url(../images/video-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
