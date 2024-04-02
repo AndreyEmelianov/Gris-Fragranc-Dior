@@ -450,6 +450,10 @@ body {
   gap: 0 20px;
 }
 
+.swiper-pagination {
+  display: none;
+}
+
 @media (max-width: 1640px) {
   .products__items {
     position: static;
@@ -497,6 +501,18 @@ body {
 
   .about__textbox {
     margin-bottom: 50px;
+  }
+
+  .container-arrow {
+    display: none;
+  }
+
+  .swiper-pagination {
+    display: block;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #7449bb;
   }
 }
 
